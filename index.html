@@ -85,8 +85,8 @@ function drawChart() {
 
   // Create the data table.
   var data = new google.visualization.DataTable();
-  data.addColumn('string', 'Topping');
-  data.addColumn('number', 'Slices');
+  data.addColumn('string', 'Gender');
+  data.addColumn('number', 'number');
   data.addRows([
     ['Male', male],
     ['Female', female],
@@ -94,7 +94,7 @@ function drawChart() {
   ]);
 
   // Set chart options
-  var options = {'title':'How Much Pizza I Ate Last Night',
+  var options = {'title':'Gender',
                  'width':400,
                  'height':300};
 
